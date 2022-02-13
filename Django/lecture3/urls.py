@@ -19,5 +19,6 @@ from django.urls import include,path
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('hello/', include("hello.urls")) #link hello with the hello app
-    ,path('newyear/',include("newyear.urls"))
+    ,path('newyear/',include("newyear.urls")),
+    path('tasks/', include('tasks.urls'))
 ]
